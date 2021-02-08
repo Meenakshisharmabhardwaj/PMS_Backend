@@ -1,0 +1,2444 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HC.Patient.Web</name>
+    </assembly>
+    <members>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetTotalClientCount">
+            <summary>       
+            <Description> get total clients of the organization</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetTotalRevenue">
+            <summary>        
+            <Description> get total revenue of the organization</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetOnlineUsers">
+            <summary>        
+            <Description> To Do Static Count</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetOrganizationAuthorization(System.Int32,System.Int32,System.String,System.String)">
+            <summary>        
+            <Description> get organization's current year's authorization</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetOrganizationEncounter(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>        
+            <Description> get organization's Encounter(Visits)</Description>
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetRegiesteredClientCount">
+            <summary>        
+            <Description> this will get current year registered clients</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetAdminDashboardData">
+            <summary>        
+            <Description> get admin dashboard data</Description>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetClientStatusChart">
+            <summary>
+            this will get the client's chart info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AdminDashboardController.GetDashboardBasicInfo">
+            <summary>
+            this will get the client's chart info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AgencyHolidaysController.GetHolidayList(System.Int32,System.Int32)">
+            <summary>        
+            Get Holiday List of Agency
+            </summary>
+            <param name="pageNumber"></param>
+            /// <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AgencyHolidaysController.SaveAgencyHolidays(HC.Patient.Model.Payroll.HolidaysModel)">
+            <summary>        
+            Save Agency Holidays
+            </summary>
+            <param name="holidaysModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AgencyHolidaysController.GetAgencyHolidaysById(System.Int32)">
+            <summary>        
+            Get Agency Holidays By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AgencyHolidaysController.DeleteAgencyHolidays(System.Int32)">
+            <summary>        
+            Delete Agency Holidays
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppConfigurationsController.GetAppConfigurations">
+            <summary>        
+            Description  : get all app settings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppConfigurationsController.GetAppConfigurations(System.Collections.Generic.List{HC.Patient.Model.AppConfiguration.AppConfigurationsModel})">
+            <summary>        
+            Description  : updating all settings
+            </summary>
+            <param name="appConfigurationsModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppointmentTypesController.GetAppointmentType(HC.Model.SearchFilterModel)">
+            <summary>        
+             Description  : this method is used to get all appointments type
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppointmentTypesController.SaveAppointmentType(HC.Patient.Model.MasterData.AppointmentTypesModel)">
+            <summary>        
+            Description  : this method is used to save and update appointments type
+            </summary>
+            <param name="appointmentTypesModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppointmentTypesController.GetAppointmentTypeById(System.Int32)">
+            <summary>        
+            Description  :this method is used to get appointments by its id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AppointmentTypesController.DeleteAppointmentType(System.Int32)">
+            <summary>        
+            Description  : this method is used to delete appointments type
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AuthorizationsController.GetAllAuthorizationsForPatient(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Description  : get all authorization for patient
+            </summary>
+            <param name="patientId"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="authType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AuthorizationsController.SaveAuthorization(HC.Patient.Model.Patient.AuthModel)">
+            <summary>        
+            Description  : save and Update authorization for patient
+            </summary>
+            <param name="authModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AuthorizationsController.GetAuthorizationById(HC.Model.SearchFilterModel)">
+            <summary>
+            get authorization for patient by id
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AuthorizationsController.DeleteAutorization(System.Int32)">
+            <summary>        
+            Description  : delete authorization for patient by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AvailabilityTemplatesController.GetAvailability(System.String,System.Boolean)">
+            <summary>        
+            Description  : get all avaliability for staff
+            </summary>
+            <param name="staffID"></param>
+            <param name="isLeaveNeeded"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AvailabilityTemplatesController.PostAsync(HC.Patient.Model.Availability.AvailabilityModel)">
+            <summary>        
+            Description  : save/update avaliability for staff
+            </summary>
+            <param name="availabilityModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AvailabilityTemplatesController.SaveUpdateAvailabilityWithLocation(HC.Patient.Model.Availability.AvailabilityModel)">
+            <summary>        
+            Description  : save/update avaliability for staff
+            </summary>
+            <param name="availabilityModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.AvailabilityTemplatesController.GetStaffAvailabilityWithLocation(System.String,System.Int32,System.Boolean)">
+            <summary>        
+            Description  : get avaliability for staff with Location
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaims(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Get claims
+            </summary>
+            <param name="pageNumber">which page number you want to access from listing of pages</param>
+            <param name="pageSize">how many records you want on a single page</param>
+            <param name="claimId">id of claim</param>
+            <param name="lastName">pass last name of the claim owner</param>
+            <param name="firstName">pass first name of the claim owner</param>
+            <param name="fromDate">pass from date range to get specific date set results</param>
+            <param name="toDate">pass to date range to get specific date set results</param>
+            <param name="payerName">pass specific payer for specfic result set</param>
+            <param name="sortColumn">pass sort column for sorting</param>
+            <param name="sortOrder">pass sort order for sorting (asc/desc)</param>
+            <param name="claimStatusId">pass claim status id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimServiceLines(System.Int32)">
+            <summary>
+            get claim service lines
+            </summary>
+            <param name="claimId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetOpenChargesForPatient(System.Int32,System.Int32)">
+            <summary>
+            Get Open Charges For Balance
+            </summary>
+            <param name="patientId"></param>
+            <param name="payerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.CreateClaim(System.Int32,System.Boolean)">
+            <summary>
+            create claim
+            </summary>
+            <param name="patientEncounterId"></param>
+            <param name="isAdmin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimServiceLineDetail(System.Int32,System.Int32)">
+            <summary>
+            get claim service line detail by id
+            </summary>
+            <param name="claimId"></param>
+            <param name="serviceLineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.SaveClaimServiceLine(System.Int32,HC.Patient.Model.Claim.ClaimServiceLineModel)">
+            <summary>
+            save new service line
+            </summary>
+            <param name="claimId"></param>
+            <param name="claimServiceLineModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.DeleteClaimServiceLine(System.Int32)">
+            <summary>
+            delete claom service line
+            </summary>
+            <param name="serviceLineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.DeleteClaim(System.Int32)">
+            <summary>
+            delete claim
+            </summary>
+            <param name="claimId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimDetailsById(System.Int32)">
+            <summary>
+            get claim detail by id
+            </summary>
+            <param name="claimId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.UpdateClaimDetails(HC.Patient.Model.Claim.ClaimModel)">
+            <summary>
+            update claim detail
+            </summary>
+            <param name="claimModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetAllClaimsWithServiceLines(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            get all claim with all service lines
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="claimId"></param>
+            <param name="patientIds"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="payerName"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <param name="claimStatusId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimsForPatientLedger(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            get claim for patient ledger
+            </summary>
+            <param name="patientId"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <param name="claimBalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimServiceLinesForPatientLedger(System.Int32)">
+            <summary>
+            get claim service line for patient
+            </summary>
+            <param name="claimId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimHistory(System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            get claim history
+            </summary>
+            <param name="claimId"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.UpdatePaymentStatus(System.String,System.Nullable{System.Int32})">
+            <summary>        
+            Update claim payment status in client ledger
+            </summary>
+            <param name="claimId"></param>
+            <param name="paymentStatusId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimsForLedger(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get claims for ledger
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <param name="patientIds"></param>
+            <param name="payerIds"></param>
+            <param name="tags"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="claimBalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.ClaimController.GetClaimServiceLinesForLedger(System.Int32)">
+            <summary>
+            get claim service l;ine for ledger
+            </summary>
+            <param name="claimId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.CommonController.CheckIfRecordExists(HC.Patient.Model.Users.RecordExistFilter)">
+            <summary>
+            
+            </summary>
+            <param name="recordExistFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.CommonController.CheckIfRecordExistsMasterDB(HC.Patient.Model.Users.RecordExistFilter)">
+            <summary>
+            
+            </summary>
+            <param name="recordExistFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.CommonController.GetPayerByPatient(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="PatientID"></param>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.EDIGatewaysController.GetEDIGateways(HC.Model.SearchFilterModel)">
+            <summary>        
+            Description  : get edi gateways
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.EDIGatewaysController.SaveUpdate(HC.Patient.Model.MasterData.EDIModel)">
+            <summary>        
+            Description  : save/update edi gateways
+            </summary>
+            <param name="eDIModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.EDIGatewaysController.GetEDIGateWayById(System.Int32)">
+            <summary>        
+            Description  : get edi gateway by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.EDIGatewaysController.DeleteEDIGateway(System.Int32)">
+            <summary>        
+            Description  : delete edi gateway by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.EligibilityCheckController.GetEligibilityEnquiryServiceCodes">
+            <summary>
+            <Description> this method is used to get eligibility enquiry service types  </Description>        
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabOrdersController.GetLabDashboardInfo">
+             <summary>
+            Description  : get dashboard cards info 
+             </summary>
+            
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabOrdersController.GetLabOrders(HC.Model.LabOrdersSearchFilterModel)">
+             <summary>
+            Description  : get list of lab orders
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabOrdersController.UploadOrderedTestReports(HC.Patient.Model.Labs.LabTestsReportsModel)">
+             <summary>
+            Description  : post lab Orders details
+             </summary>
+             <param name="labTestsReportsModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabOrdersController.UpdateLabOrderItemPaymentStatus(HC.Patient.Model.Labs.LabTestsPaymentUpdateModel)">
+             <summary>
+            Description  : get lab Orders details
+             </summary>
+             <param name="labTestsPaymentUpdateModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.SaveLab(HC.Patient.Model.Labs.LabModel)">
+             <summary>
+            Description  : save and update master lab test types
+             </summary>
+             <param name="labModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.GetLabs(HC.Model.LabSearchFilterModel)">
+             <summary>
+            Description  : get list of mater tag 
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.GetLabById(System.Int32)">
+            <summary>
+            Description  : get master lab test by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.GetLabByIdForLabUser">
+            <summary>
+            Description  : get master lab test by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.DeleteLab(System.Int32)">
+             <summary>
+            Description  : delete master lab test (soft delete)
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LabsController.CheckUserName(System.String)">
+            <summary>
+            Description  :  Check UserName 
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LoginController.SaveUserSecurityQuestion(HC.Patient.Model.SecurityQuestion.SecurityQuestionListModel)">
+            <summary>
+            save question's answer for users
+            </summary>
+            <param name="securityQuestionListModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LoginController.CheckQuestionAnswer(HC.Patient.Model.SecurityQuestion.SecurityQuestionModel)">
+            <summary>
+            compare answer of the question if user try to login with new machine
+            </summary>
+            <param name="securityQuestionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.LoginController.Logout">
+            <summary>
+            this will set user offline
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterCustomLabelsController.GetCustomLabel(HC.Model.SearchFilterModel)">
+            <summary>        
+             Description  :  this method is used to get all masters of custom labels
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterCustomLabelsController.SaveCustomLabel(HC.Patient.Model.Patient.MasterCustomLabelModel)">
+            <summary>        
+             Description  : this method is used to save masters of custom labels
+            </summary>
+            <param name="masterCustomLabelModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterCustomLabelsController.GetCustomLabelById(System.Int32)">
+            <summary>        
+             Description  :  this method is used to get masters of custom labels by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterCustomLabelsController.DeleteCustomLabel(System.Int32)">
+            <summary>        
+             Description  :  this method is used to delete masters of custom labels by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterDataController.MasterDataByName(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Get master Data by Name
+            </summary>
+            <param name="masterDataNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterDataController.GetStateByCountryID(System.Int32)">
+            <summary>
+            to get State by country ID
+            </summary>
+            <param name="countryID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterDataController.SaveRoundingRule(HC.Patient.Model.MasterData.RoundingRuleModel)">
+            <summary>
+            Save Template and Rules in template
+            </summary>
+            <param name="roundingRules"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterDataController.GetAutoComplateSearchingValues(System.String,System.String,System.String)">
+            <summary>        
+            <Description> this will get the autocomplete values dynamically</Description>
+            </summary>
+            <param name="tableName"></param>
+            <param name="columnName"></param>
+            <param name="searchText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterICDsController.GetMasterICDCodes(HC.Model.SearchFilterModel)">
+            <summary>        
+            Get Master ICD Codes
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterICDsController.SaveMasterICDCodes(HC.Patient.Model.MasterData.MasterICDModel)">
+            <summary>
+            Save Master ICD Codes
+            </summary>
+            <param name="masterICDModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterICDsController.GetMasterICDCodesById(System.Int32)">
+            <summary>
+            Get Master ICD Codes By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterICDsController.DeleteMasterICDCodes(System.Int32)">
+            <summary>
+            Delete Master ICD Codes
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterInsuranceTypesController.GetInsuranceTypes(HC.Model.SearchFilterModel)">
+            <summary>
+             Description  : get all insurance types
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterInsuranceTypesController.SaveInsuranceType(HC.Patient.Model.MasterData.MasterInsuranceTypeModel)">
+            <summary>
+             Description  : save/update insurance type
+            </summary>
+            <param name="masterInsuranceTypeModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterInsuranceTypesController.GetInsuranceTypeById(System.Int32)">
+            <summary>
+             Description  : get insurance type by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterInsuranceTypesController.DeleteInsuranceType(System.Int32)">
+            <summary>
+             Description  : delete insurance type by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestsController.SaveMasterLabTest(HC.Patient.Model.MasterData.MasterLabTestsModel)">
+             <summary>
+            Description  : save and update master lab test types
+             </summary>
+             <param name="masterLabTestsModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestsController.GetMasterLabTests(HC.Model.LabSearchFilterModel)">
+             <summary>
+            Description  : get list of mater tag 
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestsController.GetMasterLabTestById(System.Int32)">
+            <summary>
+            Description  : get master lab test by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestsController.DeleteMasterLabTest(System.Int32)">
+             <summary>
+            Description  : delete master lab test (soft delete)
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestTypesController.SaveMasterLabTestType(HC.Patient.Model.MasterData.MasterLabTestTypesModel)">
+             <summary>
+            Description  : save and update master lab test types
+             </summary>
+             <param name="masterLabTestTypesModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestTypesController.GetMasterLabTestTypeById(System.Int32)">
+            <summary>
+            Description  : get master lab test by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestTypesController.GetMasterLabTestTypes(HC.Model.LabSearchFilterModel)">
+             <summary>
+            Description  : get list of mater lab test 
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLabTestTypesController.DeleteMasterLabTestType(System.Int32)">
+             <summary>
+            Description  : delete master tag (soft delete)
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLocationsController.GetLocations(HC.Model.SearchFilterModel)">
+            <summary>
+            Description  : get all locations
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLocationsController.SaveLocation(HC.Patient.Model.MasterData.LocationModel)">
+            <summary>
+            Description  : save/update locations
+            </summary>
+            <param name="locationModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLocationsController.GetLocationById(System.Int32)">
+            <summary>
+            Description  : get location by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterLocationsController.DeleteLocation(System.Int32)">
+            <summary>
+            Description  : delete locations by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterModifierController.GetMasterModifiersList(System.Int32,System.Int32,System.String)">
+            <summary>
+            <Description> Get Master Modifiers </Description>
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterModifierController.CreateMasterModifiers(HC.Patient.Model.MasterData.MasterModifierModel)">
+            <summary>
+            <Description> Create Master Modifiers </Description>
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterModifierController.GetMasterModifierDetail(System.Int32)">
+            <summary>
+            <Description> Get Master Modifiers Detail by Id </Description>
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterModifierController.DeleteMasterModifier(System.Int32)">
+            <summary>
+            <Description> Delete Master Modifiers </Description>
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterServiceCodesController.SaveMasterServiceCode(HC.Patient.Model.MasterServiceCodes.MasterServiceCodesModel)">
+            <summary>
+            Description  : save and update master service code
+            </summary>
+            <param name="masterServiceCodesModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterServiceCodesController.GetMasterServiceCodes(System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Description  : get list of master service codes 
+            </summary>
+            <param name="searchText"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterServiceCodesController.DeleteMasterServiceCodes(System.Int32)">
+             <summary>
+            Description  : delete service code with check its dependency
+             </summary>
+             <param name="serviceCodeId"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterServiceCodesController.GetMasterServiceCodeById(System.Int32)">
+             <summary>
+            Description  : get master service code by id
+             </summary>
+             <param name="serviceCodeId"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTagController.GetMasterTag(HC.Model.SearchFilterModel)">
+             <summary>
+            Description  : get list of mater tag 
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTagController.SaveMasterTag(HC.Patient.Model.MasterData.MasterTagModel)">
+             <summary>
+            Description  : save and update master tag 
+             </summary>
+             <param name="masterTagModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTagController.GetMasterTagById(System.Int32)">
+            <summary>
+            Description  : get master tag by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTagController.DeleteMasterTag(System.Int32)">
+             <summary>
+            Description  : delete master tag (soft delete)
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTemplatesController.GetMasterTemplates(HC.Model.SearchFilterModel)">
+            <summary>        
+             Description  :  this method is used to get all master templates
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTemplatesController.SaveMasterTemplate(HC.Patient.Model.MasterData.MasterTemplatesModel)">
+            <summary>        
+             Description  :  this method is used to save master templates
+            </summary>
+            <param name="masterTemplateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTemplatesController.GetMasterTemplateById(System.Int32)">
+            <summary>        
+             Description  :  this method is used to get master template by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MasterTemplatesController.DeleteMasterTemplate(System.Int32)">
+            <summary>        
+             Description  :  this method is used to delete master template by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.Compose(HC.Patient.Model.Message.MessageComposeModel)">
+            <summary>
+            <Description> send message </Description>
+            </summary>       
+            <param name="messageComposeModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetInboxData(System.Boolean,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            get all inbox data
+            </summary>
+            <param name="forStaff"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetSentMessageData(System.Boolean,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            get all sent message data
+            </summary>
+            <param name="forStaff"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.DeleteInboxMessage(HC.Patient.Model.Message.MessageDeleteModel)">
+            <summary>
+            <Description> Delete multiple messages from inbox  </Description>
+            </summary>
+            <param name="messageDeleteModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.DeleteSentMessage(HC.Patient.Model.Message.MessageDeleteModel)">
+            <summary>
+            <Description> Delete multiple messages from sent box  </Description>
+            </summary>
+            <param name="messageDeleteModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.ChangeMessageStatus(System.Int32,System.Boolean)">
+            <summary>
+            <Description> change status of messages</Description>
+            </summary>
+            <param name="MessageId"></param>
+            <param name="Unread"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.ChangeFavouriteMessageStatus(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            <Description> change favourite message status of messages</Description>
+            </summary>
+            <param name="MessageId"></param>
+            <param name="FromInbox"></param>
+            <param name="IsFavourite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetMessageById(System.Int32)">
+            <summary>
+            <Description> get messages detail by id </Description>
+            </summary>
+            <param name="MessageId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.ForwardMessages(System.Int32)">
+            <summary>
+            <Description> forward message </Description>
+            </summary>
+            <param name="MessageId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.ReplyMessages(System.Int32)">
+            <summary>
+            <Description> reply message </Description>
+            </summary>
+            <param name="MessageId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetFavouriteMessageList(System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            <Description> get all favourite messages </Description>
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetDeleteMessageList(System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            <Description> get all deleted messages </Description>
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetMessageDocument(System.Int32,System.String)">
+            <summary>
+            <Description> download messages </Description> 
+            </summary>
+            <param name="messageId"></param>
+            <param name="name"></param>
+            <param name="isStaff"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.UsersDropDown(System.Boolean,System.String)">
+            <summary>
+            <Description> users dropdown data for Client or staff </Description>
+            </summary>
+            <param name="isStaff"></param>
+            <param name="searchText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetThreadMessages(System.Int32,System.Boolean,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            get all messages of thread
+            </summary>
+            <param name="parentMessageId"></param>
+            <param name="forStaff"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.MessageController.GetMessageCounts(System.Boolean)">
+            <summary>
+            <Description> get each message box count </Description>
+            </summary>
+            <param name="forStaff"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.OrganizationController.SaveOrganization(HC.Patient.Model.Organizations.OrganizationModel)">
+            <summary>
+            save organization and database and smtp of the organization
+            </summary>
+            <param name="organizationModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.OrganizationController.GetOrganizationDetailsById(System.Int32)">
+            <summary>
+            Get Organization Details By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.GetPatientAppointmentList(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String)">
+            <summary>
+            This method will return all the appointments for scheduler satisfying the conditions of scheduler
+            </summary>
+            <param name="locationIds"></param>
+            <param name="staffIds"></param>
+            <param name="patientIds"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="patientTags"></param>
+            <param name="staffTags"></param>
+            <param name="timeZone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.SavePatientAppointment(System.Collections.Generic.List{HC.Patient.Model.PatientAppointment.PatientAppointmentModel},System.Boolean,System.Boolean)">
+            <summary>
+            Description - This method will save patient appointment.When the apoiontment will be single it will be saved directly
+            When appointment will be recurring then this method will return all the recurrences in response.From UI users can reschedule appointments and then save bulk appointments
+            </summary>
+            <param name="patientApptList"></param>
+            <param name="IsFinish"></param>
+            <param name="isAdmin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.GetActivitiesForPatientPayer(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            This action will get all the activities linked to the primary payer of the patient
+            </summary>
+            <param name="patientId"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.GetPatientAuthorizationData(System.Nullable{System.Int32},System.Int32,System.Int32,System.DateTime,System.DateTime,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Get All authorization for a activity CPTCodes for a date for patient primary payer
+            </summary>
+            <param name="appointmentId"></param>
+            <param name="patientId"></param>
+            <param name="appointmentTypeId"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="isAdmin"></param>
+            <param name="patientInsuranceId"></param>
+            <param name="authorizationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.GetDataForSchedulerByPatient(System.Nullable{System.Int32},System.Int32,System.DateTime,System.DateTime,System.Nullable{System.Int32})">
+            <summary>
+            Get Patient payer activities,patient addresses for scheduler
+            </summary>
+            <param name="patientId"></param>
+            <param name="locationId"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="patientInsuranceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.UpdateServiceCodeBlockedUnit(System.Int32,System.String)">
+             <summary>
+             Update authorization cptcode blocked unit when new code will be added or deleted in patient encounter
+             </summary>
+             <param name="authProcedureCPTLinkId"></param>
+             <param name="actionName"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.CancelAppointments(HC.Patient.Model.PatientAppointment.CancelAppointmentModel)">
+            <summary>
+            cancel appointments with reason and reason type
+            </summary>
+            <param name="cancelApt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.ActivateAppointments(System.Int32)">
+            <summary>
+            Description - activate appointment
+            </summary>
+            <param name="appointmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientAppointmentsController.UpdateAppointmentStatus(HC.Patient.Model.PatientAppointment.AppointmentStatusModel)">
+            <summary>
+            Added status and authorization check when appointment will be approved
+            </summary>
+            <param name="apptStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientCommonController.PatientExist(HC.Patient.Entity.Patients)">
+            <summary>
+            this method is used for check patient exist or not
+            </summary>
+            <param name="patientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientCommonController.GetUserByToken">
+            <summary>
+            get user info by token (Refresh token)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientCommonController.ForgotPassword(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            forgot password 
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientCommonController.SetPassword(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            forgot password 
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientCommonController.ResetPassword(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            reset user password
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.GetPatientEncounterDetails(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Get patient encounter details whether it is saved or during add time to get data related to appointment type
+            Added appointment details to remove the data flow from scheduler to encounter screen in front end
+            </summary>
+            <param name="appointmentId"></param>
+            <param name="encounterId"></param>
+            <param name="isAdmin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.GetPatientNonBillableEncounterDetails(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Get patient non billable encounter details whether it is saved or during add time to get data related to appointment type
+            Added appointment details to remove the data flow from scheduler to encounter screen in front end
+            </summary>
+            <param name="appointmentId"></param>
+            <param name="encounterId"></param>
+            <param name="isAdmin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.SavePatientEncounter(HC.Patient.Model.PatientEncounters.PatientEncounterModel,System.Boolean)">
+            <summary>
+            Save patient encounter
+            </summary>
+            <param name="requestObj"></param>
+            <param name="isAdmin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.SavePatientNonBillableEncounter(HC.Patient.Model.PatientEncounters.PatientEncounterModel,System.Boolean)">
+            <summary>
+            Save patient non billable encounter
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.GetPatientEncounter(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Get Patient encounters
+            </summary>
+            <param name="patientID"></param>
+            <param name="appointmentType"></param>
+            <param name="staffName"></param>
+            <param name="status"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.DownloadEncounter(System.Int32)">
+            <summary>
+            This method will download encounter in pdf format
+            </summary>
+            <param name="encounterId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.SaveEncounterTemplateData(HC.Patient.Model.PatientEncounters.PatientEncounterTemplateModel)">
+            <summary>
+            This method will save Patient Encounter Template form data
+            </summary>
+            <param name="patientEncounterTemplateModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientEncounterController.GetPatientEncounterTemplateData(System.Int32,System.Int32)">
+            <summary>
+            This method will get Patient Encounter Template form with data
+            </summary>
+            <param name="patientEncounterId"></param>
+            <param name="masterTemplateId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientPortalAppointmentController.GetStaffs(HC.Model.ListingFiltterModel)">
+            <summary>
+            
+            </summary>
+            <param name="listingFiltterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientPortalAppointmentController.GetStaffAvailability(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="staffID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientPortalAppointmentController.SavePatientAppointment(HC.Patient.Model.PatientAppointment.PatientAppointmentModel)">
+            <summary>
+            Description - Save Appointment from Patient Portal
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientPortalAppointmentController.DeleteAppointment(System.Int32)">
+            <summary>
+            Description - Delete appointment from patient portal when it will be in pending status
+            </summary>
+            <param name="Id">AppointmentId</param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAddressController.GetPatientPhoneAddress(System.Int32)">
+            <summary>
+            Description  :  this method is used to get patient's phone number and address by patientid   
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAddressController.SavePhoneAddress(HC.Patient.Model.Patient.PhoneAddressModel)">
+            <summary>
+            Description  : this method is used to save patient's phone number and address by patientid    
+            </summary>
+            <param name="phoneAddressModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAllergyController.GetAllergies(HC.Model.PatientFilterModel)">
+            <summary>
+            Description : get listing of allergies
+            </summary>
+            <param name="patientFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAllergyController.SaveAllergy(HC.Patient.Model.Patient.PatientAllergyModel)">
+            <summary>
+            Description : save or update patient allergy
+            </summary>
+            <param name="patientAllergyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAllergyController.GetAllergyById(System.Int32)">
+            <summary>
+            Description : Get allergy by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsAllergyController.DeleteAllergy(System.Int32)">
+            <summary>
+            Description : Delete allergy by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.CreateUpdatePatient(HC.Patient.Model.Patient.PatientDemographicsModel)">
+            <summary>
+            <Description> this method is used to create or update the patient entity  </Description>        
+            </summary>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientById(System.Int32)">
+            <summary>
+            <Description> this method is used to get patient by id </Description>        
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientGuarantor(System.Int32)">
+            <summary>
+            <Description> this method is used to get patient guarantor  </Description>        
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatients(HC.Model.ListingFiltterModel)">
+            <summary>
+            <Description> this method is used to get patient listing with filters  </Description>        
+            </summary>
+            <param name="patientFiltterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientPayerServiceCodes(HC.Model.PatientPayerServiceCodeFilterModel)">
+            <summary>
+            Description - This action will get all the service codes assigned to a patient payer with their authorization if they are attcahed to any authorization
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientPayerServiceCodesAndModifiers(HC.Model.PatientPayerServiceCodeFilterModel)">
+            <summary>
+            Description - This action will get all the service codes assigned to a patient payer with their authorization if they are attcahed to any authorization
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientCCDA(System.Int32)">
+            <summary>        
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientsDetails(System.Int32)">
+            <summary>
+            <Description> this method is used to get full detail of patient</Description>   
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientHeaderInfo(System.Int32)">
+            <summary>
+            this method will get the patient basic info for header menu
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientByTag(HC.Model.ListingFiltterModel)">
+            <summary>
+            <Description> this method is used to get patient by tags  </Description>   
+            </summary>
+            <param name="patientFiltterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetAllAuthorizationsForPatient(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Description - Get All authorizations for patients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.UpdatePatientPortalVisibility(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            <Description> this method is used to update patient's potal (active/inactive)  </Description>   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.UpdatePatientActiveStatus(System.Int32,System.Boolean)">
+            <summary>
+            <Description> this method is used to update patient's status (active/inactive)  </Description>   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsController.GetPatientPayerActivities(System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsCustomLabelController.GetPatientCustomLabels(System.Int32)">
+            <summary>
+            Description  : this method is used to save patient's custom labels
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsCustomLabelController.SavePatientCustomLabels(System.Collections.Generic.List{HC.Patient.Model.Patient.CustomLabelModel})">
+            <summary>
+            Description  : this method is used to save patient's custom labels 
+            </summary>
+            <param name="customLabelModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsDiagnosisController.SavePatientDiagnosis(HC.Patient.Model.Patient.PatientDiagnosisModel)">
+            <summary>
+            Description  : this method is used to save patient diagnosis
+            </summary>
+            <param name="patientDiagnosisModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsDiagnosisController.GetDiagnosis(System.Int32,System.Int32)">
+            <summary>
+            Description  : this method is used to get patient's diagnosis  
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsDiagnosisController.GetDiagnosisById(System.Int32)">
+            <summary>
+            Description  : this method is used to get patient's diagnosis
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsDiagnosisController.DeleteDiagnosis(System.Int32)">
+            <summary>
+            Description  : this method is used to delete patient's diagnosis 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsGuardianController.GetPatientGuardian(HC.Model.PatientGuartdianFilterModel)">
+            <summary>
+            Description  : this method is used to get patient guardians 
+            </summary>
+            <param name="patientGuartdianFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsGuardianController.GetPatientGuardianById(System.Int32)">
+            <summary>
+            Description  : this method is used to get patient guardians by id  
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsGuardianController.CreateUpdatePatientGuardian(HC.Patient.Model.Patient.PatientGuardianModel)">
+            <summary>
+            Description  : this method is used to save/update patient guardian  
+            </summary>
+            <param name="patientGuardianModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsGuardianController.DeletePatientGuardian(System.Int32)">
+            <summary>
+            Description  : this method is used to delete patient guardian  
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsImmunizationController.SavePatientImmunization(HC.Patient.Model.Patient.PatientImmunizationModel)">
+            <summary>
+            Description  : this method is used to save patient immunization
+            </summary>
+            <param name="patientImmunizationModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsImmunizationController.GetImmunization(System.Int32,System.Int32)">
+            <summary>
+            Description  : this method is used to get patient immunizations
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsImmunizationController.GetImmunizationById(System.Int32)">
+            <summary>
+            Description  : this method is used to get patient immunization by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsImmunizationController.DeleteImmunization(System.Int32)">
+            <summary>
+            Description  : this method is used to delete patient immunization
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsInsuranceController.SavePatientInsurance(System.Collections.Generic.List{HC.Patient.Model.Patient.PatientInsuranceModel})">
+            <summary>
+            Description  : this method is used to save/update patient insurance as well as insured person
+            </summary>
+            <param name="patientInsuranceListModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsInsuranceController.GetPatientInsurances(System.Int32)">
+            <summary>
+              Description  : this method is used to get patient insurance by patientId 
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsMedicationController.GetMedication(HC.Model.PatientFilterModel)">
+            <summary>
+            Description : get listing of medications
+            </summary>
+            <param name="patientFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsMedicationController.SaveMedication(HC.Patient.Model.Patient.PatientsMedicationModel)">
+            <summary>
+            Description : save or update patient allergy
+            </summary>
+            <param name="patientsMedicationModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsMedicationController.GetMedicationById(System.Int32)">
+            <summary>
+            Description : Get medication by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsMedicationController.DeleteMedication(System.Int32)">
+            <summary>
+            Description : Delete medication by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.SavePrescription(HC.Patient.Model.Patient.PatientsPrescriptionModel)">
+            <summary>
+            Description : save or update patient prescription
+            </summary>
+            <param name="patientsPrescriptionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetPrescriptions(HC.Model.PatientFilterModel)">
+            <summary>
+            Description : get listing of prescription
+            </summary>
+            <param name="patientFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetPrescriptionById(System.Int32)">
+            <summary>
+            Description : Get prescription by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.DeletePrescription(System.Int32)">
+            <summary>
+            Description : Delete prescription by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetPrescriptionPdf(HC.Patient.Model.Patient.PatientFaxModel)">
+            <summary>
+            To generate and download the prescription pdf
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.SendFax(HC.Patient.Model.Patient.PatientFaxModel)">
+            <summary>
+            Description : send fax
+            </summary>
+            <param name="patientsPrescriptionfaxModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetMasterprescriptionDrugs(HC.Model.SearchFilterModel)">
+            <summary>        
+            Get Master Prescription Drugs
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetMasterPharmacy(HC.Model.SearchFilterModel)">
+            <summary>        
+            Get Master Pharmacy
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.GetSentPrescriptions(HC.Model.PatientFilterModel)">
+            <summary>
+            Description : get listing of prescription
+            </summary>
+            <param name="patientFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsPrescriptionController.FaxSentPrescription(HC.Patient.Model.Patient.PatientFaxModel)">
+            <summary>
+            Description : send fax
+            </summary>
+            <param name="patientsPrescriptionfaxModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsSocialHistoryController.SavePatientSocialHistory(HC.Patient.Model.Patient.PatientSocialHistoryModel)">
+            <summary>
+            Description  : this method is used to save/update patient social history
+            </summary>
+            <param name="patientSocialHistoryModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsSocialHistoryController.GetPatientSocialHistory(System.Int32)">
+            <summary>
+            Description  : this method is used to get patient social history
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsVitalsController.GetVitals(HC.Model.PatientFilterModel)">
+            <summary>
+            Description : get listing of vitals
+            </summary>
+            <param name="patientFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsVitalsController.SaveVital(HC.Patient.Model.Patient.PatientVitalModel)">
+            <summary>
+            Description : save or update patient vitals
+            </summary>
+            <param name="patientVitalModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsVitalsController.GetVitalById(System.Int32)">
+            <summary>
+            Description : Get vital by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PatientsVitalsController.DeleteVital(System.Int32)">
+            <summary>
+            Description : Delete vital by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerController.GetAllPayers(System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Get All payer details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerController.GetAppointmentTypeForPayer(System.Int32)">
+            <summary>
+            <Description>Get master appointment types associated with payer with green else red.</Description>
+            </summary>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerController.GetPayerServiceCodeDetailsById(System.Int32,System.Int32)">
+            <summary>
+            Get payer service code detail by Id
+            </summary>
+            <param name="payerAppointmentTypeId"></param>
+            <param name="payerServiceCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerController.DeletePayerServiceCode(System.Int32)">
+            <summary>
+            this will delete payer service code
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.GetActivities(HC.Model.SearchFilterModel)">
+            <summary>
+            get payer's all activities
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.GetPayerActivityServiceCodes(HC.Model.SearchFilterModel)">
+            <summary>
+            get payer's activity service codes        /// 
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.GetMasterActivitiesForPayer(HC.Model.SearchFilterModel)">
+            <summary>
+            Get master activities types associated with payer with green else red.
+            </summary>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.GetExcludedServiceCodesFromActivity(HC.Model.SearchFilterModel)">
+            <summary>
+            this will get payer service codes which are not yet added into payer activity
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.GetPayerActivityServiceCodeDetailsById(System.Int32,System.Int32)">
+            <summary>
+            Get payer service code detail by Id
+            </summary>
+            <param name="payerAppointmentTypeId"></param>
+            <param name="payerServiceCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersActivityController.UpdatePayerActivityModifiers(HC.Patient.Model.Payer.PayerAppointmentTypesModel)">
+            <summary>
+            update payer activity service code modifiers
+            </summary>
+            <param name="payerAppointmentTypesModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersController.GetPayerList(HC.Model.SearchFilterModel)">
+            <summary>
+            Get Payer List
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersController.SavePayerData(HC.Patient.Model.Payer.InsuranceCompanyModel)">
+            <summary>
+            Save Payers
+            </summary>
+            <param name="insuranceCompanyModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersController.GetPayerDataById(System.Int32)">
+            <summary>
+            Get Payer By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayersController.DeletePayerData(System.Int32)">
+            <summary>
+            Delete Payer Data
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.SavePayerServiceCode(HC.Patient.Model.Payer.PayerServiceCodesModel)">
+            <summary>
+            save and update payer service code
+            </summary>
+            <param name="payerServiceCodesModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.DeletePayerServiceCodes(System.Int32)">
+            <summary>
+            delete payer service code with check its dependency
+            </summary>
+            <param name="payerServiceCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.CheckPayerServiceCodeModifierDependency(System.Int32)">
+            <summary>
+            check payer service code modifier dependency with its appointment type
+            </summary>
+            <param name="payerModifierId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.GetPayerServiceCodeById(System.Int32)">
+            <summary>
+            get payer service code by id
+            </summary>
+            <param name="payerServiceCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.SavePayerServiceCodes(System.Collections.Generic.List{HC.Patient.Model.Payer.PayerServiceCodesModel})">
+            <summary>
+            save/update payer service codes
+            </summary>
+            <param name="payerServiceCodesModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.PayerOrMasterServiceCodes(HC.Model.SearchFilterModel)">
+            <summary>
+            get payer or master service codes
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayerServiceCodesController.GetMasterServiceCodeEx(HC.Model.SearchFilterModel)">
+            <summary>
+            get master service codes which are not added into payer service codes yet
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PaymentController.GetAllClaimsWithServiceLinesForPayer(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            get all claims with service line with specific payer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PaymentController.SaveServiceLinePayment(HC.Patient.Model.Payment.PaymentModel)">
+            <summary>
+            Description - Save/Update payment details respective to service line
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PaymentController.DeleteServiceLinePayment(System.Int32)">
+            <summary>
+            Description - Delete payment details respective to service line
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PaymentController.GetPaymentDetailsById(System.Int32)">
+            <summary>
+            Description - Get payment detail by Id for a service line
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PaymentController.SaveAppointmentPayment(HC.Patient.Model.Patient.AppointmentPaymentModel)">
+            <summary>
+            Description - Save Payment Details related to an appointment
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollBreakTimeController.GetPayrollBreakTimeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Get Payroll Break Time List
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollBreakTimeController.GetUsersByPayrollGroup(System.Int32)">
+            <summary>
+            Get Payroll Break Time details By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollBreakTimeController.SavePayrollBreakTime(HC.Patient.Model.PayrollBreaktime.PayrollBreaktimeModel)">
+            <summary>
+            Save Payroll Break Time details
+            </summary>
+            <param name="payrollBreaktimeDetailsModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollBreakTimeController.DeletePayrollBreakTime(System.Int32)">
+            <summary>
+            Delete Payroll Break Time details
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollController.GetPayrollReport(System.String,System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Get Payroll Report Data
+            </summary>
+            <param name="staffIds"></param>
+            <param name="payrollGroupId"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollController.GetUsersByPayrollGroup(System.Int32)">
+            <summary>
+            Get Users By Payroll Group
+            </summary>
+            <param name="payrollGroupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollGroupController.GetPayrollGroupList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+             Get All Payroll Groups For Organization
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollGroupController.GetPayrollGroupListForDropdown">
+            <summary>
+             Get All Payroll Groups For Dropdown
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollGroupController.SavePayrollGroup(HC.Patient.Model.Payroll.PayrollGroupModel)">
+            <summary>
+            Insert/Update Payroll Groups For Organization
+            </summary>
+            <param name="payrollGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollGroupController.GetPayrollGroupById(System.Int32)">
+            <summary>
+            Get Payroll Group Detail by Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PayrollGroupController.DeletePayrollGroup(System.Int32)">
+            <summary>
+            Delete Payroll Group Detail by Id
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.SavePharmacy(HC.Patient.Model.Pharmacies.PharmacyModel)">
+             <summary>
+            Description  : save and update pharmacy
+             </summary>
+             <param name="pharmacyModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.GetPharmacies(HC.Model.LabSearchFilterModel)">
+             <summary>
+            Description  : get list of Pharmacies 
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.GetPharmacyById(System.Int32)">
+            <summary>
+            Description  : get Pharmacy by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.GetPharmacyByIdForPharmacyUser">
+            <summary>
+            Description  : get Pharmacy by id for lab user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.DeletePharmacy(System.Int32)">
+             <summary>
+            Description  : delete pharmacy
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmaciesController.CheckUserName(System.String)">
+            <summary>
+            Description  :  Check userName 
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmacyOrdersController.GetPharmacyOrders(HC.Model.PharmacyOrdersSearchFilterModel)">
+             <summary>
+            Description  : get list of pharmacy orders
+             </summary>
+             <param name="searchFilterModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmacyOrdersController.UpdatePharmacyOrderPaymentStatus(HC.Patient.Model.Pharmacies.PharmacyOrderPaymentUpdateModel)">
+             <summary>
+            Description  : Update Pharmacy Order Payment
+             </summary>
+             <param name="pharmacyOrderPaymentUpdateModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.PharmacyOrdersController.GetPharmacyDashboardInfo">
+             <summary>
+            Description  : get dashboard cards info 
+             </summary>
+            
+             <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetCategories(HC.Model.CommonFilterModel)">
+            <summary>
+            get the list of all categories
+            </summary>
+            <param name="categoryFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetCategoryById(System.Int32)">
+            <summary>
+            get the category by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SaveCategory(HC.Patient.Model.Questionnaire.CategoryModel)">
+            <summary>
+            save and update categories
+            </summary>
+            <param name="categoryModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.DeleteCategory(System.Int32)">
+            <summary>
+            delete the category by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetCategoryCodes(HC.Model.CategoryCodesFilterModel)">
+            <summary>
+            get the listing of category codes
+            </summary>
+            <param name="categoryCodesFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetCategoryCodeById(System.Int32)">
+            <summary>
+            get the category code by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SaveCategoryCodes(HC.Patient.Model.Questionnaire.CategoryCodeModel)">
+            <summary>
+            save and update category code
+            </summary>
+            <param name="categoryCodeModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.DeleteCategoryCode(System.Int32)">
+            <summary>
+            delete the category by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetDocuments(HC.Model.CommonFilterModel)">
+            <summary>
+            get the list of all documents
+            </summary>
+            <param name="commonFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetDocumentById(System.Int32)">
+            <summary>
+            get the document by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SaveDocument(HC.Patient.Model.Questionnaire.QuestionnaireDocumentModel)">
+            <summary>
+            save and update documents
+            </summary>
+            <param name="questionnaireDocumentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.DeleteDocument(System.Int32)">
+            <summary>
+            delete the document by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetSections(HC.Model.SectionFilterModel)">
+            <summary>
+            get the list of all section
+            </summary>
+            <param name="sectionFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetSectionById(System.Int32)">
+            <summary>
+            get the section by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SaveSection(HC.Patient.Model.Questionnaire.QuestionnaireSectionModel)">
+            <summary>
+            save and update section
+            </summary>
+            <param name="questionnaireSectionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.DeleteSection(System.Int32)">
+            <summary>
+            delete the section by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SaveSectionItem(HC.Patient.Model.Questionnaire.QuestionnaireSectionItemModel)">
+            <summary>
+            save and update section item
+            </summary>
+            <param name="questionnaireSectionItemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetSectionItems(HC.Model.SectionFilterModel)">
+            <summary>
+            get the list of all section items
+            </summary>
+            <param name="sectionFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetSectionItemDDValues(HC.Model.SectionFilterModel)">
+            <summary>
+            get the dropdown values
+            </summary>
+            <param name="sectionFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetSectionItemById(System.Int32)">
+            <summary>
+            get the section item by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.SavePatientDocumentAnswer(HC.Patient.Model.Questionnaire.AnswersModel)">
+            <summary>
+            save question answer
+            </summary>
+            <param name="answersModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetPatientDocumentAnswer(HC.Model.PatientDocumentAnswerFilterModel)">
+            <summary>
+            get the patient document with answer
+            </summary>
+            <param name="patientDocumentFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetPatientDocuments(HC.Model.PatientDocumentFilterModel)">
+            <summary>
+            get the patient documents
+            </summary>
+            <param name="patientDocumentFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.AssignDocumentToPatient(HC.Patient.Model.Questionnaire.AssignDocumentToPatientModel)">
+            <summary>
+            save question answer
+            </summary>
+            <param name="assignDocumentToPatientModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.GetPatientDocumentById(System.Int32)">
+            <summary>
+            save patient's document 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.QuestionnaireController.UpdateStatus(HC.Patient.Model.Questionnaire.SaveSignatureModel)">
+            <summary>
+            add signature of client and staff
+            </summary>
+            <param name="saveSignatureModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.RolePermissionController.GetRolePermissions(System.Int32)">
+            <summary>
+            Get Role Permissions
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.RolePermissionController.SaveRolePermissions(HC.Patient.Model.RolePermission.RolePermissionsModel)">
+            <summary>
+            Save Role Permissions
+            </summary>
+            <param name="rolePermissionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SecurityQuestionsController.GetSecurityQuestions(HC.Model.SearchFilterModel)">
+            <summary>
+            Get Master Security Questions
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SecurityQuestionsController.SaveSecurityQuestions(HC.Patient.Model.SecurityQuestion.MasterSecurityQuestionModel)">
+            <summary>
+            Save Master Security Questions
+            </summary>
+            <param name="masterSecurityQuestionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SecurityQuestionsController.GetSecurityQuestionsById(System.Int32)">
+            <summary>
+            Get Master Security Questions By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SecurityQuestionsController.DeleteSecurityQuestions(System.Int32)">
+            <summary>
+            Delete Master Security Questions
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffCustomLabelController.GetStaffCustomLabels(System.Int32)">
+            <summary>
+            Get Custom Label for Staff
+            </summary>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffCustomLabelController.SaveCustomLabels(System.Collections.Generic.List{HC.Patient.Model.Patient.StaffCustomLabelModel})">
+            <summary>
+            Save Staff Custom Labels
+            </summary>
+            <param name="staffCustomLabelModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffLeaveController.GetStaffLeaveList(HC.Model.SearchFilterModel,System.Int32)">
+            <summary>
+            <Description> Get Staff Applied Leave List </Description>
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffLeaveController.SaveStaffAppliedLeave(HC.Patient.Model.Staff.StaffLeaveModel)">
+            <summary>
+            <Description> Save and Update Staff Applied Leaves </Description>
+            </summary>
+            <param name="staffLeaveModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffLeaveController.GetAppliedStaffLeaveById(System.Int32)">
+            <summary>
+            <Description> Get Applied Staff Leave By Id </Description>
+            </summary>
+            <param name="StaffLeaveId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffLeaveController.DeleteAppliedLeave(System.Int32)">
+            <summary>
+            <Description> Cancel/Delete Applied Leave </Description>
+            </summary>
+            <param name="StaffLeaveId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffLeaveController.UpdateLeaveStatus(System.Collections.Generic.List{HC.Patient.Model.Staff.LeaveStatusModel})">
+            <summary>
+            Approve or Decline Staff Applied Leaves
+            </summary>
+            <param name="leaveStatusModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffPayrollRateForActivityController.SaveUpdateStaffPayrollRateForActivity(System.Collections.Generic.List{HC.Patient.Model.Payroll.StaffPayrollRateForActivityModel})">
+            <summary>
+            save pay rate for staff with respective of activity
+            </summary>
+            <param name="staffPayrollRateForActivityModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffPayrollRateForActivityController.GetStaffPayRateOfActivity(HC.Model.SearchFilterModel)">
+            <summary>
+            get listing of staff payrate with respective of activity
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetStaffs(HC.Model.ListingFiltterModel)">
+            <summary>
+            Description: this method is used to get staffs listing with filters
+            </summary>
+            <param name="staffFiltterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.CreateUpdateStaff(HC.Patient.Entity.Staffs)">
+            <summary>
+            this method is used to create and update staff
+            </summary>
+            <param name="staffs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetStaffById(System.Int32)">
+            <summary>
+            this method is used to get staff by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.DeleteStaff(System.Int32)">
+            <summary>
+            this method is used to delete staff by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.UpdateStaffActiveStatus(System.Int32,System.Boolean)">
+            <summary>
+            this method is used to update staff Status
+            </summary>
+            <param name="staffId"></param>
+            <param name="isActive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetStaffByTag(HC.Model.ListingFiltterModel)">
+            <summary>
+            this method is used to get staff by tags filter
+            </summary>
+            <param name="listingFiltterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetDoctorDetailsFromNPI(System.String,System.String)">
+            <summary>
+            Get doctor details from NPI number
+            </summary>
+            <param name="npiNumber"></param>
+            <param name="enumerationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetStaffProfileData(System.Int32)">
+            <summary>
+            <Description> Get Staff Profile Data</Description>        
+            </summary>
+            <param name="Id">Staff Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetAssignedLocationsById(System.Int32)">
+            <summary>
+            this method is used to get staff lcoation by staff id
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffsController.GetStaffHeaderData(System.Int32)">
+            <summary>
+            this method is used to get staff header data
+            </summary>        
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.GetStaffTimesheetDataSheetView(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get timesheet data
+            </summary>
+            <param name="staffIds"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="weekValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.GetStaffTimesheetDataTabularView(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Get timesheet data tabular view
+            </summary>
+            <param name="staffIds"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="weekValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.UpdateStaffTimesheet(System.Collections.Generic.List{HC.Patient.Model.Staff.StaffTimesheetModel})">
+            <summary>
+            Update timesheet data
+            </summary>
+            <param name="timesheetModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.SaveUserTimesheetDetails(HC.Patient.Model.Staff.StaffDetailedTimesheetModel)">
+            <summary>
+            Add/Update timesheet data
+            </summary>
+            <param name="staffDetailedTimesheet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.DeleteUserTimesheetDetails(System.Int32)">
+            <summary>
+            Delete timesheet data
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.GetUserTimesheetDetails(System.Int32)">
+            <summary>
+            Get timesheet data
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.UpdateUserTimesheetStatus(System.Collections.Generic.List{HC.Patient.Model.Staff.StaffDetailedTimesheetModel})">
+            <summary>
+            Update timesheet Status
+            </summary>
+            <param name="staffDetailedTimesheet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.StaffTimesheetController.SubmitUserTimesheet(System.String)">
+            <summary>
+            Submit User Timesheet
+            </summary>
+            <param name="Ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SuperAdminController.GetSuperAdminClaimsIdentity(HC.Patient.Model.ApplicationUser,HC.Patient.Entity.SuperUser)">
+            <summary>
+            IMAGINE BIG RED WARNING SIGNS HERE!
+            You'd want to retrieve claims through your claims provider
+            in whatever way suits you, the below is purely for demo purposes!
+            </summary>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.SuperAdminController.ToUnixEpochDate(System.DateTime)">
+            <returns>Date converted to seconds since Unix epoch (Jan 1, 1970, midnight UTC).</returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserController.CheckUserPasswordStatus">
+            <summary>
+            this will set user offline
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserDocumentController.UploadUserDocuments(HC.Patient.Model.Users.UserDocumentsModel)">
+            <summary>
+            upload user documents
+            </summary>
+            <param name="userDocuments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserDocumentController.GetPatientDocuments(System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            get user's all documents
+            </summary>
+            <param name="userID"></param>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserDocumentController.GetUserDocument(System.Int32)">
+            <summary>
+            <Description> get user's single document in base 64</Description>
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserDocumentController.DeleteUserDocument(System.Int32)">
+            <summary>
+            <Description> This API for delete user's document </Description>
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserRoleController.GetRoles(HC.Model.SearchFilterModel)">
+            <summary>
+            Description  : get all roles
+            </summary>
+            <param name="searchFilterModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserRoleController.SaveRole(HC.Patient.Model.Users.UserRoleModel)">
+            <summary>
+            Description  : save/update roles
+            </summary>
+            <param name="userRoleModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserRoleController.GetRoleById(System.Int32)">
+            <summary>
+            Description  : get role by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Controllers.UserRoleController.DeleteRole(System.Int32)">
+            <summary>
+            Description  : delete role by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HC.Patient.Web.Filters.FileCallbackResult">
+            <summary>
+            Represents an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult"/> that when executed will
+            execute a callback to write the file content out as a stream.
+            </summary>
+        </member>
+        <member name="M:HC.Patient.Web.Filters.FileCallbackResult.#ctor(System.String,System.Func{System.IO.Stream,Microsoft.AspNetCore.Mvc.ActionContext,System.Threading.Tasks.Task})">
+            <summary>
+            Creates a new <see cref="T:HC.Patient.Web.Filters.FileCallbackResult"/> instance.
+            </summary>
+            <param name="contentType">The Content-Type header of the response.</param>
+            <param name="callback">The stream with the file.</param>
+        </member>
+        <member name="M:HC.Patient.Web.Filters.FileCallbackResult.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Func{System.IO.Stream,Microsoft.AspNetCore.Mvc.ActionContext,System.Threading.Tasks.Task})">
+            <summary>
+            Creates a new <see cref="T:HC.Patient.Web.Filters.FileCallbackResult"/> instance.
+            </summary>
+            <param name="contentType">The Content-Type header of the response.</param>
+            <param name="callback">The stream with the file.</param>
+        </member>
+        <member name="P:HC.Patient.Web.Filters.FileCallbackResult.Callback">
+            <summary>
+            Gets or sets the callback responsible for writing the file content to the output stream.
+            </summary>
+        </member>
+        <member name="M:HC.Patient.Web.Hubs.ChatHub.Connect(System.Int32)">
+            <summary>
+            this method is used for connect the user with hub and save the connectionid into database
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Hubs.ChatHub.SendMessage(System.String,System.Int32,System.Int32)">
+            <summary>
+            he SendMessage method can be called by any connected client.
+            It sends the received message to "all clients".
+            SignalR code is asynchronous to provide maximum scalability.
+            </summary>        
+            <param name="message"></param>        
+            <param name="fromUserId"></param>
+            <param name="toUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HC.Patient.Web.Hubs.ChatHub.MessageCountRequest(System.Boolean)">
+            <summary>
+            this is use for message count notification by signalR for real time dynamic count for new message recieved
+            </summary>
+            <param name="forStaff"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
